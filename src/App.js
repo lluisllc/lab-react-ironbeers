@@ -1,5 +1,6 @@
 import './App.css';
 import Home from './pages/Home';
+import Beers from './pages/Beers';
 import { Routes, Route } from "react-router-dom";
 import React from 'react';
 
@@ -10,6 +11,12 @@ function App() {
         path="/"
         element={<Home />}
       />
+
+<Route
+        path="/beers"
+        element={<Beers />}
+      />
+
     </Routes>
   </div>;
 }
